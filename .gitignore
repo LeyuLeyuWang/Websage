@@ -1,0 +1,37 @@
+# Node / frontend
+node_modules/
+dist/
+build/
+*.log
+pnpm-lock.yaml
+yarn.lock
+npm-debug.log*
+.vite/
+
+# Binary assets (Codex PRs cannot show binary diffs)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.webp
+*.ttf
+*.woff
+*.woff2
+
+# Python / backend
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+.mypy_cache/
+.pytest_cache/
+.env
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
