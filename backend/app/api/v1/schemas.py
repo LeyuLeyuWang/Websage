@@ -1,10 +1,9 @@
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel
 
 
 class SummarizeRequest(BaseModel):
-    url: HttpUrl | None = None
-    content: str | None = None
-    prompt: str = "Summarize the provided content."
+    url: str
+    prompt: str
 
 
 class SummarizeResponse(BaseModel):

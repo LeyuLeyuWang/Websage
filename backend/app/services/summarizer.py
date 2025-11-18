@@ -18,8 +18,6 @@ class SummarizerService:
         prompt = payload.prompt
         if payload.url:
             prompt += f"\nSource: {payload.url}"
-        if payload.content:
-            prompt += f"\nContent: {payload.content[:500]}"
 
         llm_response = await self.provider.summarize(prompt)
         entry = CacheEntry(key=cache_key, summary=llm_response.text, source=payload.url or "direct")
